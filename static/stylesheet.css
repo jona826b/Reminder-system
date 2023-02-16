@@ -1,0 +1,29 @@
+:root{
+    --Navback: blue;
+    --href: green;
+    --hrefhover: white;
+    --check: black;
+}
+
+
+.headnav{
+    overflow: hidden;
+    background-color: var(--Navback);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a{
+    float: right;
+    display: block;
+    color: var(--href);
+    text-align: center;
+    padding: 2% 2%;
+}
+
+.navbar a:hover{
+    background-color: var(--hrefhover);
+    color: car(--check);
+}
+

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <style>
+      :root{
+        --background: #FCFCFC;
+        --timelinebackground: #D2E4E7;
+        --linecolor: #FCFCFC;
+        --dotcolor: #FCFCFC;
+        --headbackground: green;
+      }
+        *{
+            margin:0;
+            padding:0;
+            outline:none;
+            text-decoration:none;
+            list-style:none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          }
+          body{
+            padding-top:10px;
+            justify-content:center;
+            background-color: var(--background);
+            transform:scale(0.8) translateY(-50px);
+            display: grid;
+            margin-top: 5%;
+            margin-right: 5%;
+          }
+          .timeline{
+          background: var(--timelinebackground);
+          mix-blend-mode: normal;
+          backdrop-filter: blur(15px);
+          overflow:hidden;
+          top:130px;
+          margin-left:71px;
+          box-shadow: 0px 20px 53px -30px rgba(95, 102, 173, 0.566816);
+          border-radius: 10px;
+          padding-top:70px;
+          width: 100%;
+          float: left;
+          position: absolute;
+          padding-left: 50px;
+          }
+          h2 {
+          font-weight: bold;
+          font-size: 30px;
+          line-height: 30px;
+          color:#2B2862;
+          margin-top:40px;
+          text-align: center;
+            }
+              .container{
+                display: flex;
+              }
+                .lines{
+                  margin-left:40px;
+                  margin-top:6px;
+                }
+                  .dot{
+                    width:14px;
+                    height:14px;
+                    background: var(--dotcolor);
+                    border-radius:7px;
+                  }
+                  .line{
+                    height:160px;
+                    width:4px;
+                    background: var(--linecolor);
+                    margin-left:5.3px;
+                  }
+                .cards{
+                  width: 80%;
+                  height: fit-content;
+                  margin-left:12px;
+                  transform:translateY(-50px);
+                  text-align: center;
+                  display: grid;
+                  padding-bottom: 10%;
+            }
+                .card{
+                width: fit-content;
+                height: fit-content;
+                background: #FFFFFF;
+                margin-top: 5%;
+                box-shadow:0 2px 2px 0  #eeeeee40;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: 0px 16px 15px -10px rgba(105, 96, 215, 0.0944602);
+                font-size: 10%;
+                padding: auto;
+                padding-bottom: 10%;
+                margin-right: 10%;
+            }
+          h1{
+          font-size: 40px;
+          line-height: 17px;
+          color: black;
+          text-align: center;
+          padding-bottom: 5px;
+          padding-left: 35px;
+        }
+         p{
+        font-size: 20px;
+        line-height: 22px;
+        text-align: center;
+        color: #2B2862;
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+        height: fit-content;
+              }
+   #phoneNumber{
+   height: 40px;
+   text-align: center;
+   font-size: 20px;
+   padding: 40px;
+   color:black;
+   padding: 14px 20px;
+   width: 40%;
+   margin: 10px 0;
+   border: 2px solid #B2B8CC;
+   border-radius: 25px;
+   margin-bottom: 50px;
+   margin-top: 20px;
+}
+#btn-send{
+    text-align: center;
+    font-size: 20px;
+    width: 40%;
+    padding: 15px 10px;
+    background-color: darkcyan;
+    color: white;
+    margin: 10px 0;
+    border: 2px solid;
+    border-radius: 25px;
+    margin-top: 40px;
+}
+#btn-send:hover{
+background-color: rgb(154, 204, 151);
+}
+ .button{
+  margin-right: 15%;
+  text-align: center;
+  border-radius: 8px;
+  border:2px;
+  border-color:  #D1D6E6;
+  border-style: solid;
+  border-width: 5px 5px;
+  padding-left: 20px;
+  padding-top: 5%;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  height: 30%;
+  margin-left: 5%;
+  background-color:white;
+ }
+#form{
+    color: #2B2862;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color:white;
+    display: block;
+}
+#dates{
+padding: 30px;
+height: 40px;
+text-align: center;
+   font-size: 20px;
+   padding: 40px;
+   color:black;
+   padding: 14px 20px;
+   margin: 10px 0;
+   border: 2px solid #B2B8CC;
+   border-radius: 25px;
+}
+#start-dato{
+       height: 40px;
+       font-size: 20px;
+       color:black;
+       padding: 14px 20px;
+       margin: 10px 0;
+       border: 2px solid #B2B8CC;
+       border-radius: 25px;
+       text-align: center;
+       cursor: pointer;
+}
+#dates{
+    text-align: center;
+}
+.button p{
+  font-size: 23px;
+  line-height: 22px;
+  text-align: center;
+  height:100px;
+  color: #2B2862;
+  padding-top: 5%;
+}
+.header{
+  height: 100px;
+  background: var(--headbackground);
+  width: 100%;
+  position: fixed;
+}
+     </style>
+<div class="header">
+<h1> Reminder til forsøgsperson</h1>
+</div>
+</div>
+<div class="timeline">
+    <div class="container">
+      <div class="lines">
+        <div class="dot"></div>
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+      </div>
+      <div class="cards">
+        {% for message in messages %}
+        <div class="card">
+          <h2>Dag {{message.day}}</h2>
+          <p>{{message.message}}</p>
+        </div>
+      {% endfor %}
+            <div class="card">
+              <h2>Dag 2</h2>
+              <p> facilisis nulla non fel. Bibendum massa volutpat quis. Pellentesque porta risus vitae justo consectetur, ut molestie elit suscipi Quisque vehicula nibh sit amet erat pellentesque interdum. Suspendisse nec cursus odio. Praesent facilisis nulla non fel.   </p>
+            </div>
+         
+      </div>
+<div class="button">
+        <p> Tilmeld forsøgsperson til reminder system, ved at tilføje telefon nr.</p>
+        <form action="/sendSmsFlereGange/" method="post" id="form">
+          <input type="text" id="phoneNumber" name="telefon" placeholder="Indtast telefon nr.">
+          <div class="time">
+            <label for="time"> Indtast tid for reminder:</label>
+            <br>
+            <input type="time" id="start-dato" name="dato" required value="12:00"/><br>
+            </div>
+            <div class="date">
+            <label for="date"> Vælg dato for reminder:</label>
+            <br>
+            <input type="date" id="dates" name="date" required/>
+            </div>
+          <input onClick="sub" type="submit" id="btn-send" value="Send">
+        </form>
+    </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
