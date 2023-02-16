@@ -5,6 +5,10 @@
     --check: black;
 }
 
+.header{
+    margin-top: 10px;
+
+}
 
 .headnav{
     overflow: hidden;
@@ -27,3 +31,10 @@
     color: car(--check);
 }
 
+.body{
+    margin-top: 10px;
+}
+
+.footer{
+    margin-top: 10px;
+}
