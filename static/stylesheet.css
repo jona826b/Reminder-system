@@ -1,29 +1,50 @@
 :root{
-    --Navback: blue;
-    --href: green;
-    --hrefhover: white;
-    --check: black;
+    --Navback: rgb(255, 255, 255);
+    --href: rgb(0, 0, 0);
+    --check: rgb(224, 220, 220);
+    --background: grey;
+}
+body{
+background-color:var(--background);  
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 
 .headnav{
-    overflow: hidden;
     background-color: var(--Navback);
     position: fixed;
-    top: 0;
     width: 100%;
+    height: 15%;
+    font-size: 30px;
+    top: 0%;
+    padding-bottom: 15px;
+     
 }
 
-.navbar a{
-    float: right;
-    display: block;
+.headnav a{
     color: var(--href);
     text-align: center;
-    padding: 2% 2%;
+    color: rgb(2, 1, 1);
+    text-decoration: none;
+    font-size: 25px;
+    display:inline-block;
+    padding-left: 40px;
+    padding-bottom: 20px;
+
+
 }
 
-.navbar a:hover{
-    background-color: var(--hrefhover);
-    color: car(--check);
+.headnav a:hover{
+    color: var(--check);
 }
+.headnav img{
+   height: 40%;
+   width: 40%;
+   padding-top: 4%;
+   padding-left: 2px;
+ 
+    
+}
+
 

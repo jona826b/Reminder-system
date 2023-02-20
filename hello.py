@@ -17,6 +17,8 @@ def sendMultiple():
         unixTime = datetime.datetime.timestamp(dateFormat)
         #Dag 0 besked
         #send_sms("ForskningNu", message.message, newUnixTime, [tlf])
+
+        
         
 
         

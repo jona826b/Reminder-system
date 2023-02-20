@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\Users\Jonathan\Visual studio\Flask\venv"
+VIRTUAL_ENV="C:\Users\Jonan\Visual studio code\Reminder-system\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
